@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MM · Обработка VMware</title>
+  <style>
+    :root{font-family:Segoe UI,Arial,sans-serif;color:#203347;background:#f3f6fa;font-synthesis:none;--blue:#215cdc;--muted:#63758a;--line:#dce4ee}
+    *{box-sizing:border-box}body{margin:0}header{background:#fff;border-bottom:1px solid var(--line)}.bar{max-width:1180px;margin:auto;padding:22px 28px;display:flex;align-items:center;gap:14px}.logo{display:grid;place-items:center;background:#203347;color:white;width:46px;height:46px;border-radius:12px;font-weight:750;letter-spacing:1px}.brand{font-weight:650}.small{font-size:13px;color:var(--muted)}.local{margin-left:auto;background:#edf6f2;color:#277358;padding:7px 12px;border-radius:20px;font-size:12px}main{max-width:1180px;margin:auto;padding:36px 28px 50px}h1{font-size:32px;letter-spacing:-.8px;margin:0 0 10px}h2{font-size:20px;margin:0}h3{font-size:17px;margin:0 0 8px}p{line-height:1.6}.intro{color:var(--muted);margin:0 0 28px;max-width:760px}.steps{display:flex;gap:28px;margin:24px 0 32px;font-size:13px;color:var(--muted)}.steps b{color:var(--blue);margin-right:6px}.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:26px;margin-bottom:22px}.heading{display:flex;align-items:center;gap:12px;margin-bottom:22px}.number{font-size:12px;color:var(--blue);background:#edf2fe;border-radius:9px;padding:8px;font-weight:700}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid var(--line);border-radius:12px;padding:20px;min-width:0}.card p{font-size:13px;color:var(--muted);min-height:42px;margin:0 0 15px}.tag{display:inline-block;background:#f0f4fa;border-radius:5px;padding:4px 7px;font-size:11px;letter-spacing:.5px;margin-bottom:14px}.upload{display:block;background:#fafcff;border:1px dashed #afbfda;border-radius:10px;padding:16px 12px;cursor:pointer;text-align:center;font-size:13px;color:var(--blue);position:relative}.upload:hover,.upload.drag{background:#edf3ff;border-color:var(--blue)}.upload input{display:block;width:100%;font-size:12px;margin-top:12px;color:var(--muted)}input::file-selector-button{border:0;border-radius:5px;background:#e7eefb;padding:7px;color:#274c86;cursor:pointer}.file-status{font-size:12px;margin-top:12px;color:var(--muted);word-break:break-word;line-height:1.5}.file-status.ready{color:#277358}.row{display:flex;align-items:center;gap:24px;flex-wrap:wrap}.hint{color:var(--muted);font-size:13px;flex:1}.button{display:inline-flex;align-items:center;justify-content:center;border:0;background:var(--blue);color:#fff;border-radius:8px;padding:12px 22px;font:600 14px Segoe UI,Arial;cursor:pointer;text-decoration:none}.button:hover{background:#1746ad}.button:disabled{background:#a6b8d8;cursor:wait}.secondary{background:#edf2fc;color:#2852a0;padding:9px 14px;font-size:12px}.secondary:hover{background:#dce7fb}.status-box{margin-top:20px;background:#f5f8fc;border-radius:10px;padding:16px;font-size:14px;line-height:1.5}.status-box.error{background:#fff0f0;color:#a22f36}.status-box.done{background:#edf8f2;color:#236743}progress{width:100%;height:5px;margin-top:12px;accent-color:var(--blue)}details{margin-top:16px}summary{cursor:pointer;color:var(--muted);font-size:13px}pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:320px;overflow:auto;background:#172738;color:#d4dfeb;padding:18px;border-radius:8px;font:12px/1.7 Consolas,monospace}.result-head{display:flex;align-items:center;justify-content:space-between;gap:16px}.result-head .heading{margin-bottom:0}.table-wrap{overflow:auto;margin-top:20px}table{width:100%;border-collapse:collapse;font-size:13px;text-align:left}th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px;font-weight:600;background:#f7f9fc}td,th{padding:14px 12px;border-bottom:1px solid #e7edf4}td:first-child{overflow-wrap:anywhere;min-width:220px}td:last-child{text-align:right;white-space:nowrap}.empty{text-align:center;color:var(--muted);padding:30px 12px}.notice{background:#fff4df;border:1px solid #f0d494;color:#77551a;padding:13px 16px;border-radius:8px;margin-bottom:18px}footer{font-size:12px;color:var(--muted);line-height:1.7}.pill{font-size:11px;color:var(--muted);margin-left:auto}.download-current{margin-top:12px}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #80aaff;outline-offset:3px}[hidden]{display:none!important}@media(max-width:760px){main{padding:24px 16px}.bar{padding:16px}.cards{grid-template-columns:1fr}.panel{padding:18px}.steps{gap:12px;flex-wrap:wrap}h1{font-size:27px}.card p{min-height:0}.local{display:none}.row{gap:14px}.row>.button{width:100%}.pill{display:none}}
+  </style>
+</head>
+<body>
+<header><div class="bar"><div class="logo">MM</div><div><div class="brand">VMware · Обработка хостов</div><div class="small">Подготовка списка КЭ</div></div><span class="local">● Локальная обработка</span></div></header>
+<main>
+  <h1>От исходных данных к готовому отчёту</h1>
+  <p class="intro">Загрузите справочники и выгрузку хостов, запустите обработку и скачайте результат в Excel.</p>
+  <nav class="steps" aria-label="Этапы"><span><b>01</b> Входные файлы</span><span>→</span><span><b>02</b> Обработка</span><span>→</span><span><b>03</b> Результаты</span></nav>
+  <div id="notice" class="notice" role="alert" hidden></div>
+  <section class="panel" aria-labelledby="upload-title">
+    <div class="heading"><span class="number">01</span><h2 id="upload-title">Входные файлы</h2><span class="pill">До 200 МБ на файл</span></div>
+    <div class="cards">
+      <article class="card"><span class="tag">RSM / XLSX</span><h3>Справочник серверов</h3><p>Имена, IP-адреса и КЭ для сопоставления хостов.</p><label class="upload">Выберите или перетащите файл<input type="file" id="rsm" accept=".xlsx" aria-label="Загрузить RSM"></label><div class="file-status" id="rsm-status">Проверка файла…</div></article>
+      <article class="card"><span class="tag">PU / XLSX</span><h3>Производственная утилизация</h3><p>Значения утилизации для каждого КЭ.</p><label class="upload">Выберите или перетащите файл<input type="file" id="pu" accept=".xlsx" aria-label="Загрузить PU"></label><div class="file-status" id="pu-status">Проверка файла…</div></article>
+      <article class="card"><span class="tag">DATA / CSV, XLSX</span><h3>Выгрузка VMware Hosts</h3><p>Список хостов и их состояния обслуживания.</p><label class="upload">Выберите или перетащите файл<input type="file" id="target" accept=".csv,.xlsx" aria-label="Загрузить выгрузку хостов"></label><div class="file-status" id="target-status">Проверка файла…</div></article>
+    </div>
+  </section>
+  <section class="panel" aria-labelledby="run-title">
+    <div class="heading"><span class="number">02</span><h2 id="run-title">Обработка</h2></div>
+    <div class="row"><span class="hint">Обработка использует загруженные файлы и настройки сервера.</span><button id="run" class="button" disabled>Запустить обработку →</button></div>
+    <div id="status" class="status-box" role="status" aria-live="polite">Подключение к серверу…</div>
+    <progress id="progress" aria-label="Обработка выполняется" hidden></progress>
+    <a id="current-download" class="button download-current" hidden>Скачать готовый отчёт</a>
+    <details id="details"><summary>Журнал обработки</summary><pre id="logs">Журнал появится после запуска.</pre></details>
+  </section>
+  <section class="panel" aria-labelledby="results-title">
+    <div class="result-head"><div class="heading"><span class="number">03</span><h2 id="results-title">Готовые отчёты</h2></div><button id="refresh" class="button secondary">Обновить</button></div>
+    <p class="small">Файлы из каталога output. Новые результаты находятся в начале списка.</p>
+    <div class="table-wrap"><table><thead><tr><th>Название файла</th><th>Создан</th><th>Размер</th><th><span class="small">Скачать</span></th></tr></thead><tbody id="results"></tbody></table><div id="empty" class="empty" hidden>Отчётов пока нет. Загрузите файлы и запустите обработку.</div></div>
+  </section>
+  <footer>Промежуточный отчёт сохраняется в <b>log</b>. Итоговый файл с префиксом <b>MM_</b> — в <b>output</b>.<br>Поля отчётов: КЭ · node_name · node_state · Производственная утилизация.</footer>
+</main>
+<script>
+  const $ = id => document.getElementById(id);
+  let token = '', state = null, uploading = false, starting = false;
+  const roles = ['rsm','pu','target'];
+  const sizeText = n => n < 1048576 ? (n/1024).toFixed(1)+' КБ' : (n/1048576).toFixed(1)+' МБ';
+  function notice(message){$('notice').textContent=message;$('notice').hidden=!message;}
+  function controls(){
+    const busy=uploading||starting||state?.job.status==='running';
+    for(const role of roles) $(role).disabled=busy;
+    $('run').disabled=busy||!state||!roles.every(r=>state.files[r].ready);
+  }
+  function render(s){
+    state=s;token=s.token;
+    for(const role of roles){const f=s.files[role],el=$(role+'-status');el.className='file-status'+(f.ready?' ready':'');el.textContent=f.ready?'✓ '+f.name+' · '+sizeText(f.size)+' · '+f.directory+'/':'Файл не загружен · '+f.directory+'/';}
+    const job=s.job, busy=job.status==='running';
+    $('status').className='status-box '+job.status;
+    $('status').textContent=uploading?'Загрузка файла…':starting?'Запуск обработки…':busy?'Обработка выполняется. Большой справочник RSM может обрабатываться несколько минут.':job.status==='done'?'Готово. Оба отчёта сохранены, итоговый файл доступен для скачивания.':job.status==='error'?job.error:roles.every(r=>s.files[r].ready)?'Все три файла готовы. Можно запускать обработку.':'Загрузите недостающие файлы для запуска.';
+    $('progress').hidden=!(busy||uploading||starting);
+    $('logs').textContent=job.lines.join('\n')||'Журнал появится после запуска.';
+    if(job.status==='error')$('details').open=true;
+    $('current-download').hidden=!job.result||uploading||starting;
+    if(job.result)$('current-download').href=job.result;
+    $('results').replaceChildren();
+    for(const f of s.results){const row=document.createElement('tr');for(const value of [f.name,new Date(f.modified).toLocaleString('ru-RU'),sizeText(f.size)]){const cell=document.createElement('td');cell.textContent=value;row.append(cell);}const cell=document.createElement('td'),link=document.createElement('a');link.href=f.url;link.className='button secondary';link.textContent='↓ Excel';link.setAttribute('aria-label','Скачать '+f.name);cell.append(link);row.append(cell);$('results').append(row);}
+    $('empty').hidden=s.results.length>0;controls();
+  }
+  async function refresh(){
+    try{const response=await fetch('/api/status',{cache:'no-store'});if(!response.ok)throw Error('Сервер недоступен.');render(await response.json());}
+    catch(e){notice('Нет связи с сервером. Запустите web_app.py и обновите страницу.');state=null;controls();}
+  }
+  async function upload(role,file){
+    if(!file||uploading||starting||state?.job.status==='running')return;
+    const ext=file.name.split('.').pop().toLowerCase();
+    if(!(role==='target'?['csv','xlsx']:['xlsx']).includes(ext)){notice('Выберите файл подходящего формата.');return;}
+    if(file.size===0||file.size>200*1024*1024){notice('Файл должен быть непустым и не больше 200 МБ.');return;}
+    uploading=true;notice('');controls();if(state)render(state);
+    try{const response=await fetch('/api/upload?role='+role+'&name='+encodeURIComponent(file.name),{method:'POST',headers:{'X-App-Token':token},body:file});const data=await response.json();if(!response.ok)throw Error(data.error);}
+    catch(e){notice('Не удалось загрузить файл: '+e.message);}
+    finally{uploading=false;$(role).value='';await refresh();}
+  }
+  for(const role of roles){const input=$(role),zone=input.parentElement;input.addEventListener('change',()=>upload(role,input.files[0]));zone.addEventListener('dragover',e=>{e.preventDefault();zone.classList.add('drag');});zone.addEventListener('dragleave',()=>zone.classList.remove('drag'));zone.addEventListener('drop',e=>{e.preventDefault();zone.classList.remove('drag');upload(role,e.dataTransfer.files[0]);});}
+  $('run').addEventListener('click',async()=>{
+    starting=true;notice('');controls();if(state)render(state);
+    try{const response=await fetch('/api/run',{method:'POST',headers:{'Content-Type':'application/json','X-App-Token':token},body:JSON.stringify({})});const data=await response.json();if(!response.ok)throw Error(data.error);}
+    catch(e){notice('Не удалось запустить обработку: '+e.message);}
+    finally{starting=false;await refresh();}
+  });
+  $('refresh').addEventListener('click',()=>{notice('');refresh();});
+  refresh();setInterval(()=>{if(!uploading&&!starting)refresh();},2500);
+</script>
+</body>
+</html>
